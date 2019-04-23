@@ -10,7 +10,12 @@ Most developers spend their time on the console / terminal.  MacOs already offer
 
 2. [sdkman.io](https://sdkman.io/install)
 
-Excellent for installing Java (and easily managing the different versions) - plus many other SDKs like gradle, groovy, maven etc.
+Excellent for installing Java (and easily managing the different versions) - plus many other SDKs like gradle, groovy, maven etc.  For example:
+
+```
+sdk install gradle
+sdk install java 8.0.212-zulu
+```
 
 3. [Sublime](https://www.sublimetext.com/)
 
