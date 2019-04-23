@@ -45,8 +45,10 @@ Great for Java, Groovy, Kotlin code bases.
 
 ## Aliases
 
+```
 alias ll='ls -la'
 alias h=history
+```
 
 ## Prompt
 
