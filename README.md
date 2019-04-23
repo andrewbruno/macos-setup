@@ -54,6 +54,10 @@ alias h=history
 
 Avoid accidently working in the wrong directory, or pushing the wrong branch. Setup your prompt to highlight the path you are in, and the git branch (if any).
 
+The following gives you a prompt like:
+
+```~/dev/andrewbruno/macos-setup (master) $```
+
 Edit your `~/.bash_profile` and add:
 
 ```
@@ -62,3 +66,4 @@ parse_git_branch() {
 }
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 ```
+
