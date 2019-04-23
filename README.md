@@ -8,14 +8,18 @@ These are some of the tools and apps that are recommended:
 
 Most developers spend their time on the console / terminal.  MacOs already offers a default Terminal, however I personally find iTerm more prowerful.
 
-2. [Sublime](https://www.sublimetext.com/)
+2. [sdkman.io](https://sdkman.io/install)
+
+Excellent for installing Java (and easily managing the different versions) - plus many other SDKs like gradle, groovy, maven etc.
+
+3. [Sublime](https://www.sublimetext.com/)
 
 Sublime is a very lightweight text editor, that many have used for coding.  Today, I use Visual Code and IntelliJ for 90% of my code development, but there are many times I need a quick lihght weight text editor to just write some notes, or remove some formatting.
 
-3. [Visual Studio Code](https://code.visualstudio.com/)
+4. [Visual Studio Code](https://code.visualstudio.com/)
 
 Great for web development, front end, ReactJS and GoLang to name a few.
 
-4. [IntelliJ](https://www.jetbrains.com/idea/)
+5. [IntelliJ](https://www.jetbrains.com/idea/)
 
 Great for Java, Groovy, Kotlin code bases.
