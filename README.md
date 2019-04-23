@@ -17,14 +17,26 @@ sdk install gradle
 sdk install java 8.0.212-zulu
 ```
 
-3. [Sublime](https://www.sublimetext.com/)
+3. [Homebrew](https://brew.sh/)
+
+The missing package manager for macOS.  Excellent for installing awscli, nvm (and managing different versions of node), etc.
+
+```
+brew install awscli
+
+brew install nvm
+nvm install 8.16.0
+nvm alias default v8.16.0
+```
+
+4. [Sublime](https://www.sublimetext.com/)
 
 Sublime is a very lightweight text editor, that many have used for coding.  Today, I use Visual Code and IntelliJ for 90% of my code development, but there are many times I need a quick lihght weight text editor to just write some notes, or remove some formatting.
 
-4. [Visual Studio Code](https://code.visualstudio.com/)
+5. [Visual Studio Code](https://code.visualstudio.com/)
 
 Great for web development, front end, ReactJS and GoLang to name a few.
 
-5. [IntelliJ](https://www.jetbrains.com/idea/)
+6. [IntelliJ](https://www.jetbrains.com/idea/)
 
 Great for Java, Groovy, Kotlin code bases.
