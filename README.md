@@ -21,14 +21,14 @@ sdk install java 8.0.212-zulu
 
 3. [Homebrew](https://brew.sh/)
 
-The missing package manager for macOS.  Excellent for installing awscli, nvm (and managing different versions of node), etc.
+The missing package manager for macOS.  Excellent for installing awscli, maven, nvm (and managing different versions of node), etc.
 
 ```
 brew install awscli
-
 brew install nvm
 nvm install 8.16.0
 nvm alias default v8.16.0
+mvn install maven
 ```
 
 4. [Sublime](https://www.sublimetext.com/)
