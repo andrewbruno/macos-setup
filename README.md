@@ -23,12 +23,19 @@ sdk install java 8.0.212-zulu
 
 The missing package manager for macOS.  Excellent for installing awscli, maven, nvm (and managing different versions of node), etc.
 
+For Node apps or ReactJS apps:
+```
+brew install nvm
+nvm install 8.10.0
+nvm alias default v8.10.0
+nvm use default
+```
+Note: I like to use node 8.10 because AWS supports this exact [version|https://aws.amazon.com/about-aws/whats-new/2018/04/aws-lambda-supports-nodejs/].
+
+Others:
 ```
 brew install awscli
-brew install nvm
-nvm install 8.16.0
-nvm alias default v8.16.0
-mvn install maven
+brew install maven
 ```
 
 4. [Sublime](https://www.sublimetext.com/)
