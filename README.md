@@ -46,9 +46,9 @@ brew install maven
 brew install golang
 ```
 
-4. [Sublime](https://www.sublimetext.com/)
+4. [Atom](https://atom.io/)
 
-Sublime is a very lightweight text editor, that many have used for coding.  Today, I use Visual Code and IntelliJ for 90% of my code development, but there are many times I need a quick lihght weight text editor to just write some notes, or remove some formatting.
+Atom is a very lightweight text editor, that many have used for coding.  Today, I use Visual Code and IntelliJ for 90% of my code development, but there are many times I need a quick lihght weight text editor to just write some notes, or remove some formatting.
 
 5. [Visual Studio Code](https://code.visualstudio.com/)
 
