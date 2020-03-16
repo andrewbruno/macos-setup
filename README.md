@@ -56,7 +56,9 @@ Great for web development, front end, ReactJS and GoLang to name a few.
 
 6. [IntelliJ](https://www.jetbrains.com/idea/)
 
-Great for Java, Groovy, Kotlin code bases.
+Great for Java, Groovy, Kotlin and Golang code bases.
+
+Use Golang plugin https://plugins.jetbrains.com/plugin/9568-go
 
 7. Enable Developer Mode using XCode
 
