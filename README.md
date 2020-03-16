@@ -6,6 +6,13 @@ Everytime I get a new Mac, or a collegue starts, there are some fundamental tool
 
 These are some of the tools and apps that are recommended:
 
+0. [Xcode](https://developer.apple.com/xcode/) Tools
+
+Ensure you have a proper compilation toolchain
+```
+xcode-select --install
+```
+
 1. [iTerm](https://www.iterm2.com/)
 
 Most developers spend their time on the console / terminal.  MacOs already offers a default Terminal, however I personally find iTerm more prowerful.
@@ -36,6 +43,7 @@ Others:
 ```
 brew install awscli
 brew install maven
+brew install golang
 ```
 
 4. [Sublime](https://www.sublimetext.com/)
@@ -50,14 +58,28 @@ Great for web development, front end, ReactJS and GoLang to name a few.
 
 Great for Java, Groovy, Kotlin code bases.
 
+7. Enable Developer Mode using XCode
+
+This assists in the debugger not asking for admin privilages everytime you attempt to run Delve or other debuggers.
+
+```
+sudo /usr/sbin/DevToolsSecurity -enable
+```
+
 ## Aliases
+
+Edit your `~/.zshrc` file and add some good old aliases:
+
+`vi ~/.zshrc`
+
+and add these at the top:
 
 ```
 alias ll='ls -la'
 alias h=history
 ```
 
-## Prompt
+## Add Git/branch prompt
 
 Avoid accidently working in the wrong directory, or pushing the wrong branch. Setup your prompt to highlight the path you are in, and the git branch (if any).
 
@@ -65,7 +87,7 @@ The following gives you a prompt like:
 
 ```~/dev/andrewbruno/macos-setup (master) $```
 
-Edit your `~/.bash_profile` and add:
+Edit your `~/.zshrc` and add:
 
 ```
 parse_git_branch() {
