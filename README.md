@@ -81,6 +81,15 @@ alias ll='ls -la'
 alias h=history
 ```
 
+## Add support for Makefile command complete
+
+Edit your `~/.zshrc` and add:
+
+```
+zstyle ':completion:*:*:make:*' tag-order 'targets'
+autoload -U compinit && compinit
+```
+
 ## Add Git/branch prompt
 
 Avoid accidently working in the wrong directory, or pushing the wrong branch. Setup your prompt to highlight the path you are in, and the git branch (if any).
