@@ -81,15 +81,6 @@ alias ll='ls -la'
 alias h=history
 ```
 
-## Add support for Makefile command complete
-
-Edit your `~/.zshrc` and add:
-
-```
-zstyle ':completion:*:*:make:*' tag-order 'targets'
-autoload -U compinit && compinit
-```
-
 ## Add Git/branch prompt
 
 Avoid accidently working in the wrong directory, or pushing the wrong branch. Setup your prompt to highlight the path you are in, and the git branch (if any).
@@ -105,4 +96,44 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+```
+
+## Add support for Makefile command complete
+
+Edit your `~/.zshrc` and add:
+
+```
+zstyle ':completion:*:*:make:*' tag-order 'targets'
+autoload -U compinit && compinit
+```
+
+## Add ssh command complete
+
+Add to your to your `~/.zshrc`:
+
+```
+_ssh()
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts=$(grep '^Host' ~/.ssh/config | awk '{print $2}')
+    COMPREPLY=( $(compgen -W "$opts" -- ${cur}) )
+    return 0
+}
+complete -F _ssh ssh
+```
+
+In your .ssh/config file add mappings:
+
+```
+Host mars-prd
+ Hostname mars.prd.universe
+ IdentityFile ~/.ssh/id_rsa
+ ForwardAgent yes
+
+Host 10.*
+  IdentityFile ~/.ssh/id_rsa
+  ProxyCommand ssh -tW %h:%p mars-prd
 ```
