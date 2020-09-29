@@ -33,11 +33,11 @@ The missing package manager for macOS.  Excellent for installing awscli, maven, 
 For Node apps or ReactJS apps:
 ```
 brew install nvm
-nvm install 8.10.0
-nvm alias default v8.10.0
+nvm install v12.18.4
+nvm alias default v12.18.4
 nvm use default
 ```
-Note: I like to use node 8.10 because AWS supports this exact [version|https://aws.amazon.com/about-aws/whats-new/2018/04/aws-lambda-supports-nodejs/].
+Note: Check AWS supports runtime [versions|https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html] in order to match.
 
 Others:
 ```
