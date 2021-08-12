@@ -23,7 +23,8 @@ Excellent for installing Java (and easily managing the different versions) - plu
 
 ```
 sdk install gradle
-sdk install java 8.0.212-zulu
+sdk install java 8.0.282-zulu
+sdk install java 11.0.9-amzn
 ```
 
 3. [Homebrew](https://brew.sh/)
