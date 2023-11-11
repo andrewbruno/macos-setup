@@ -82,6 +82,10 @@ and add these at the top:
 ```
 alias ll='ls -la'
 alias h=history
+alias dkrm='docker rm $(docker ps -aq)'
+alias dkstop='docker stop $(docker ps -aq)'
+alias dkdeleteimages='docker rmi -f $(docker images -a -q)'
+alias dkclean='docker stop $(docker ps -aq) && docker rm $(docker ps -aq)'
 ```
 
 ## Add Git/branch prompt
