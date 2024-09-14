@@ -19,12 +19,22 @@ Most developers spend their time on the console / terminal.  MacOs already offer
 
 2. [sdkman.io](https://sdkman.io/install)
 
-Excellent for installing Java (and easily managing the different versions) - plus many other SDKs like gradle, groovy, maven etc.  For example:
+Excellent for installing Java (and easily managing the different versions) - plus many other SDKs like gradle, groovy, maven etc.
+
+To install:
+```
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version
+sdk list java
+```
+
+And then you cna use to setup various tools, like:
 
 ```
+sdk install java 17.0.12-amzn
+sdk install java 21.0.4-amzn
 sdk install gradle
-sdk install java 8.0.282-zulu
-sdk install java 11.0.9-amzn
 ```
 
 3. [Homebrew](https://brew.sh/)
