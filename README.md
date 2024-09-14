@@ -94,15 +94,18 @@ Avoid accidently working in the wrong directory, or pushing the wrong branch. Se
 
 The following gives you a prompt like:
 
-```~/dev/github.com/andrewbruno/macos-setup (main) $```
+```~/dev/github.com/andrewbruno/macos-setup main $```
 
 Edit your `~/.zshrc` and add:
 
 ```
+# Function to show Git branch if in a Git repo
 parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+  git rev-parse --abbrev-ref HEAD 2>/dev/null
 }
-export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+# Custom prompt
+export PS1="%F{green}%~%f %F{yellow}$(parse_git_branch)%f $ "
 ```
 
 ## Add support for Makefile command complete
