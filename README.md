@@ -94,7 +94,7 @@ Avoid accidently working in the wrong directory, or pushing the wrong branch. Se
 
 The following gives you a prompt like:
 
-```~/dev/andrewbruno/macos-setup (master) $```
+```~/dev/github.com/andrewbruno/macos-setup (main) $```
 
 Edit your `~/.zshrc` and add:
 
