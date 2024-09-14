@@ -144,3 +144,38 @@ Host 10.*
   IdentityFile ~/.ssh/id_rsa
   ProxyCommand ssh -tW %h:%p mars-prd
 ```
+
+## Visual Studio
+
+Download from https://code.visualstudio.com/
+
+Add `code .` shotcut to commnd prompt CLI
+
+### 1. **Install VS Code Command Line Tool**:
+First, ensure that the command-line tool for VS Code is installed. Open VS Code, then:
+
+- Press `Cmd` + `Shift` + `P` to open the Command Palette.
+- Type `Shell Command: Install 'code' command in PATH` and select it from the dropdown.
+
+![add code to cli](images/add-code-to-cli.png)
+
+This step will add `code` to your system's `PATH`, allowing you to use the `code` command from the terminal.
+
+### 2. **Restart Your Terminal**:
+After adding the `code` command, restart your terminal for the changes to take effect.
+
+### 3. **Verify the Installation**:
+To verify that the `code` command is now available, run the following in your terminal:
+
+```bash
+code --version
+```
+
+If you see the version of VS Code, it means the command is successfully added to your `PATH`.
+
+### 4. **Use `code .` to Open the Current Directory**:
+Now you can open VS Code from any directory by typing:
+
+```bash
+code .
+```
